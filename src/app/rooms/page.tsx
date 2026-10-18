@@ -9,6 +9,7 @@ import { RoomCard } from "@/components/RoomCard";
 import { Button } from "@/components/ui/button";
 import { Room, RoomCategory } from "@/lib/types";
 import { INITIAL_ROOMS } from "@/lib/data/hotel-data";
+import { VirtualConcierge } from "@/components/VirtualConcierge";
 
 function RoomsContent() {
   const searchParams = useSearchParams();
@@ -214,6 +215,9 @@ function RoomsContent() {
           </div>
         )}
       </section>
+
+      {/* Virtual Concierge Assistant */}
+      <VirtualConcierge />
 
       <Footer />
     </div>
