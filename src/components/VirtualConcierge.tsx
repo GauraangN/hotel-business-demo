@@ -68,11 +68,11 @@ export function VirtualConcierge() {
   return (
     <>
       {/* Floating Action Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
         {!isOpen && (
           <button
             onClick={() => setIsOpen(true)}
-            className="group flex items-center gap-3 bg-gradient-to-r from-slate-900 via-slate-900 to-amber-950/80 hover:to-amber-900/90 text-white px-5 py-3.5 rounded-full border border-amber-400/40 shadow-2xl hover:shadow-amber-500/20 backdrop-blur-xl transition-all duration-300 hover:scale-105"
+            className="group flex items-center gap-2.5 sm:gap-3 bg-gradient-to-r from-slate-900 via-slate-900 to-amber-950/90 hover:to-amber-900/90 text-white px-3.5 sm:px-5 py-2.5 sm:py-3.5 rounded-full border border-amber-400/40 shadow-2xl hover:shadow-amber-500/25 backdrop-blur-xl transition-all duration-300 hover:scale-105"
             aria-label="Open Concierge Chat"
           >
             <div className="relative">
@@ -81,12 +81,12 @@ export function VirtualConcierge() {
               </div>
               <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-emerald-400 rounded-full border-2 border-slate-950 animate-pulse" />
             </div>
-            <div className="text-left hidden sm:block">
+            <div className="text-left hidden xs:block sm:block">
               <div className="text-xs font-semibold text-white group-hover:text-amber-300 transition-colors">
-                VIP Butler & Concierge
+                VIP Butler
               </div>
               <div className="text-[10px] text-amber-400/80">
-                Online • Instant Assistance
+                Online Desk
               </div>
             </div>
           </button>
@@ -95,7 +95,7 @@ export function VirtualConcierge() {
 
       {/* Concierge Chat Dialog Drawer */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-full max-w-[380px] sm:max-w-[420px] glass-panel-gold rounded-3xl border border-amber-400/30 shadow-2xl overflow-hidden flex flex-col h-[520px] animate-in fade-in slide-in-from-bottom-6 duration-300">
+        <div className="fixed inset-x-3 bottom-3 sm:inset-x-auto sm:right-6 sm:bottom-6 w-auto sm:w-[400px] z-50 glass-panel-gold rounded-3xl border border-amber-400/30 shadow-2xl overflow-hidden flex flex-col h-[75vh] max-h-[520px] animate-in fade-in slide-in-from-bottom-6 duration-300">
           {/* Header */}
           <div className="bg-slate-950/90 border-b border-white/10 p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">

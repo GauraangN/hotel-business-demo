@@ -125,7 +125,7 @@ export function RoomDetailClient({ room, relatedRooms }: RoomDetailClientProps) 
           </div>
 
           {/* Quick Specifications Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 glass-panel rounded-2xl border border-white/10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-6 glass-panel rounded-2xl border border-white/10">
             <div className="flex items-center gap-3">
               <Users className="w-5 h-5 text-amber-400 shrink-0" />
               <div>

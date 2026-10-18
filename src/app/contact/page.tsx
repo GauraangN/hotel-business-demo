@@ -140,7 +140,7 @@ export default function ContactPage() {
         </div>
 
         {/* Airport Transfers Grid */}
-        <div className="p-8 rounded-3xl glass-panel border border-white/10 space-y-6">
+        <div className="p-4 sm:p-8 rounded-2xl sm:rounded-3xl glass-panel border border-white/10 space-y-4 sm:space-y-6">
           <div className="flex items-center gap-3">
             <Plane className="w-6 h-6 text-amber-400" />
             <h3 className="text-xl font-serif font-bold text-white">
@@ -168,7 +168,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact / Dispatch Form */}
-        <div className="max-w-3xl mx-auto glass-panel-gold rounded-3xl p-6 sm:p-10 border border-amber-500/30">
+        <div className="max-w-3xl mx-auto glass-panel-gold rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border border-amber-500/30">
           {isSuccess ? (
             <div className="text-center py-8 space-y-4">
               <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center">

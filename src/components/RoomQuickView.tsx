@@ -43,7 +43,7 @@ export function RoomQuickView({ room, isOpen, onClose }: RoomQuickViewProps) {
         <DialogContent className="max-w-4xl bg-slate-950 border border-amber-500/30 text-slate-100 p-0 overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Left: Photos Carousel */}
-            <div className="bg-slate-900 flex flex-col justify-between p-6 space-y-4 border-r border-white/10">
+            <div className="bg-slate-900 flex flex-col justify-between p-4 sm:p-6 space-y-3 sm:space-y-4 border-b md:border-b-0 md:border-r border-white/10">
               <div className="relative aspect-[16/11] rounded-2xl overflow-hidden border border-white/10 shadow-lg">
                 <img
                   src={room.images[activePhoto] || room.images[0]}
@@ -100,7 +100,7 @@ export function RoomQuickView({ room, isOpen, onClose }: RoomQuickViewProps) {
             </div>
 
             {/* Right: Suite Details & Action */}
-            <div className="p-6 sm:p-8 flex flex-col justify-between space-y-6">
+            <div className="p-4 sm:p-8 flex flex-col justify-between space-y-4 sm:space-y-6">
               <div className="space-y-4">
                 <div className="space-y-1">
                   <span className="text-xs uppercase tracking-widest text-amber-400 font-semibold">

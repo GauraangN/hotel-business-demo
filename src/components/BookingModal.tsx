@@ -148,88 +148,88 @@ export function BookingModal({
       <DialogContent className="max-w-3xl bg-slate-950 border border-amber-500/30 text-slate-100 p-0 overflow-hidden shadow-2xl">
         {confirmation ? (
           /* Confirmation View */
-          <div className="p-8 text-center space-y-6">
-            <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-400 mx-auto flex items-center justify-center">
-              <CheckCircle2 className="w-10 h-10" />
+          <div className="p-4 sm:p-8 text-center space-y-4 sm:space-y-6">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-amber-500/20 border border-amber-400/40 text-amber-400 mx-auto flex items-center justify-center">
+              <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10" />
             </div>
 
-            <div className="space-y-2">
-              <div className="text-xs uppercase tracking-widest text-amber-400 font-semibold">
+            <div className="space-y-1.5 sm:space-y-2">
+              <div className="text-[10px] sm:text-xs uppercase tracking-widest text-amber-400 font-semibold">
                 Reservation Confirmed
               </div>
-              <h2 className="text-3xl font-serif text-white font-bold">
+              <h2 className="text-2xl sm:text-3xl font-serif text-white font-bold">
                 We Look Forward to Welcoming You
               </h2>
-              <p className="text-sm text-slate-400 max-w-md mx-auto">
+              <p className="text-xs sm:text-sm text-slate-400 max-w-md mx-auto">
                 A confirmation dossier and itinerary details have been dispatched to{" "}
                 <span className="text-amber-300 font-medium">{confirmation.guestEmail}</span>.
               </p>
             </div>
 
-            <div className="bg-slate-900/90 border border-white/10 rounded-2xl p-6 text-left max-w-lg mx-auto space-y-4">
-              <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                <span className="text-xs text-slate-400 uppercase tracking-wider">
+            <div className="bg-slate-900/90 border border-white/10 rounded-2xl p-4 sm:p-6 text-left max-w-lg mx-auto space-y-3 sm:space-y-4">
+              <div className="flex justify-between items-center border-b border-white/10 pb-2.5">
+                <span className="text-[11px] text-slate-400 uppercase tracking-wider">
                   Booking Reference
                 </span>
-                <span className="font-mono text-base font-bold text-amber-300">
+                <span className="font-mono text-sm sm:text-base font-bold text-amber-300">
                   {confirmation.id}
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
                 <div>
-                  <span className="text-slate-400 block text-xs">Suite</span>
+                  <span className="text-slate-400 block text-[10px] sm:text-xs">Suite</span>
                   <span className="font-medium text-white">{confirmation.roomName}</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-xs">Dates</span>
+                  <span className="text-slate-400 block text-[10px] sm:text-xs">Dates</span>
                   <span className="font-medium text-white">
                     {confirmation.checkIn} to {confirmation.checkOut} ({confirmation.nights} nights)
                   </span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-xs">Primary Guest</span>
+                  <span className="text-slate-400 block text-[10px] sm:text-xs">Primary Guest</span>
                   <span className="font-medium text-white">{confirmation.guestName}</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 block text-xs">Grand Total</span>
+                  <span className="text-slate-400 block text-[10px] sm:text-xs">Grand Total</span>
                   <span className="font-bold text-amber-400">
                     {formatCurrency(confirmation.totalPrice)}
                   </span>
                 </div>
               </div>
 
-              <div className="bg-amber-500/10 border border-amber-400/20 rounded-xl p-3 flex items-center gap-3">
-                <Sparkles className="w-5 h-5 text-amber-400 shrink-0" />
-                <span className="text-xs text-amber-200/90">
-                  Your VIP Butler will contact you 24 hours prior to arrival to confirm private transfer and customized suite preferences.
+              <div className="bg-amber-500/10 border border-amber-400/20 rounded-xl p-3 flex items-center gap-2.5">
+                <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
+                <span className="text-[11px] text-amber-200/90 leading-relaxed">
+                  Your VIP Butler will contact you 24 hours prior to arrival to confirm private transfer.
                 </span>
               </div>
             </div>
 
-            <Button onClick={handleReset} variant="default" className="px-8">
+            <Button onClick={handleReset} variant="default" className="w-full sm:w-auto px-8">
               Done & Return to Site
             </Button>
           </div>
         ) : (
           /* Form View */
           <div>
-            <div className="bg-gradient-to-r from-slate-900 via-slate-900 to-amber-950/40 p-6 border-b border-white/10">
+            <div className="bg-gradient-to-r from-slate-900 via-slate-900 to-amber-950/40 p-4 sm:p-6 border-b border-white/10">
               <DialogHeader>
-                <div className="flex items-center gap-2 text-amber-400 text-xs font-semibold uppercase tracking-wider">
-                  <Sparkles className="w-4 h-4" />
+                <div className="flex items-center gap-1.5 text-amber-400 text-[10px] sm:text-xs font-semibold uppercase tracking-wider">
+                  <Sparkles className="w-3.5 h-3.5" />
                   <span>Exclusive Direct Reservation</span>
                 </div>
-                <DialogTitle className="text-2xl font-serif text-white">
+                <DialogTitle className="text-xl sm:text-2xl font-serif text-white">
                   Reserve Your Metropolitan Sanctuary
                 </DialogTitle>
-                <DialogDescription className="text-slate-400 text-sm">
+                <DialogDescription className="text-slate-400 text-xs sm:text-sm">
                   Enjoy complimentary airport transfers, bespoke Butler amenities, and flexible cancellation.
                 </DialogDescription>
               </DialogHeader>
             </div>
 
-            <form onSubmit={handleSubmit} className="p-6 space-y-6">
+            <form onSubmit={handleSubmit} className="p-4 sm:p-6 space-y-4 sm:space-y-6">
               {errorMessage && (
                 <div className="bg-red-500/15 border border-red-500/40 rounded-xl p-3 text-sm text-red-300">
                   {errorMessage}

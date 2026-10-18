@@ -126,7 +126,7 @@ export default function DiningAndEventsPage() {
               </div>
             </div>
 
-            <div className="p-8 space-y-4 flex-1 flex flex-col justify-between">
+            <div className="p-5 sm:p-8 space-y-4 flex-1 flex flex-col justify-between">
               <div className="space-y-2">
                 <h3 className="text-2xl font-serif font-semibold text-white">
                   Aura Sky Dining
@@ -162,7 +162,7 @@ export default function DiningAndEventsPage() {
               </div>
             </div>
 
-            <div className="p-8 space-y-4 flex-1 flex flex-col justify-between">
+            <div className="p-5 sm:p-8 space-y-4 flex-1 flex flex-col justify-between">
               <div className="space-y-2">
                 <h3 className="text-2xl font-serif font-semibold text-white">
                   The Obsidian Lounge & Terrace
@@ -253,7 +253,7 @@ export default function DiningAndEventsPage() {
           </p>
         </div>
 
-        <div className="glass-panel-gold rounded-3xl p-6 sm:p-10 shadow-2xl border border-amber-500/30">
+        <div className="glass-panel-gold rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 shadow-2xl border border-amber-500/30">
           {isSuccess ? (
             <div className="text-center py-10 space-y-4">
               <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center">
@@ -312,7 +312,7 @@ export default function DiningAndEventsPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="contactPhone">Phone / Direct Line</Label>
                   <Input

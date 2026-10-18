@@ -31,7 +31,7 @@ export function Footer() {
               {HOTEL_INFO.description}
             </p>
 
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center gap-3 pt-2">
               <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-amber-300">
                 <Award className="w-4 h-4 text-amber-400" />
                 <span>Forbes Travel Guide 5-Star</span>

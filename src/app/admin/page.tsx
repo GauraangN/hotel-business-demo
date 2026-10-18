@@ -443,17 +443,17 @@ export default function AdminPage() {
               {/* TABS NAVIGATION */}
               <Tabs defaultValue="bookings" className="space-y-6">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <TabsList className="bg-slate-900 border border-white/10 p-1 rounded-2xl">
-                    <TabsTrigger value="bookings" className="rounded-xl text-xs sm:text-sm">
-                      Guest Reservations ({bookings.length})
+                  <TabsList className="bg-slate-900 border border-white/10 p-1.5 rounded-2xl flex flex-wrap gap-1.5 w-full sm:w-auto h-auto">
+                    <TabsTrigger value="bookings" className="rounded-xl text-xs sm:text-sm py-2 px-3">
+                      Guest Bookings ({bookings.length})
                     </TabsTrigger>
-                    <TabsTrigger value="enquiries" className="rounded-xl text-xs sm:text-sm">
+                    <TabsTrigger value="enquiries" className="rounded-xl text-xs sm:text-sm py-2 px-3">
                       Corporate Enquiries ({enquiries.length})
                     </TabsTrigger>
-                    <TabsTrigger value="rooms" className="rounded-xl text-xs sm:text-sm">
+                    <TabsTrigger value="rooms" className="rounded-xl text-xs sm:text-sm py-2 px-3">
                       Suite Inventory ({rooms.length})
                     </TabsTrigger>
-                    <TabsTrigger value="supabase" className="rounded-xl text-xs sm:text-sm">
+                    <TabsTrigger value="supabase" className="rounded-xl text-xs sm:text-sm py-2 px-3">
                       Supabase Setup Guide
                     </TabsTrigger>
                   </TabsList>
@@ -473,9 +473,9 @@ export default function AdminPage() {
 
                 {/* TAB 1: BOOKINGS */}
                 <TabsContent value="bookings" className="space-y-4">
-                  <div className="glass-panel rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-left text-sm">
+                  <div className="glass-panel rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <div className="overflow-x-auto w-full">
+                      <table className="min-w-[720px] w-full text-left text-sm">
                         <thead className="bg-slate-950/90 text-xs uppercase text-slate-400 border-b border-white/10">
                           <tr>
                             <th className="py-4 px-6 font-semibold">Reference</th>
@@ -566,9 +566,9 @@ export default function AdminPage() {
 
                 {/* TAB 2: ENQUIRIES */}
                 <TabsContent value="enquiries" className="space-y-4">
-                  <div className="glass-panel rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-left text-sm">
+                  <div className="glass-panel rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <div className="overflow-x-auto w-full">
+                      <table className="min-w-[720px] w-full text-left text-sm">
                         <thead className="bg-slate-950/90 text-xs uppercase text-slate-400 border-b border-white/10">
                           <tr>
                             <th className="py-4 px-6 font-semibold">Enquiry ID</th>
